@@ -1,0 +1,87 @@
+{
+    "test_next_word_prediction": {
+        "task_name": "test_next_word_prediction",
+        "accuracy": 0.3333333333333333,
+        "precision": 0.3333333333333333,
+        "recall": 0.3333333333333333,
+        "f1_score": 0.3333333333333333,
+        "top_k_accuracy": 0.6666666666666666,
+        "detailed_results": [
+            {
+                "sample_id": 1,
+                "input": "I love your [MASK].",
+                "expected": "smile",
+                "top_1_prediction": "voice",
+                "top_k_predictions": [
+                    "voice",
+                    "smile",
+                    "mother",
+                    "mom",
+                    "hair"
+                ]
+            },
+            {
+                "sample_id": 2,
+                "input": "What is your [MASK]?",
+                "expected": "name",
+                "top_1_prediction": "name",
+                "top_k_predictions": [
+                    "name",
+                    "problem",
+                    "purpose",
+                    "plan",
+                    "story"
+                ]
+            },
+            {
+                "sample_id": 3,
+                "input": "She is the [MASK] of the class.",
+                "expected": "best",
+                "top_1_prediction": "youngest",
+                "top_k_predictions": [
+                    "youngest",
+                    "leader",
+                    "head",
+                    "president",
+                    "largest"
+                ]
+            }
+        ]
+    },
+    "text_summarization": {
+        "rouge-1": {
+            "r": 0.5422794117647058,
+            "p": 0.24291187739463602,
+            "f": 0.33297490611279273
+        },
+        "rouge-2": {
+            "r": 0.16041666666666665,
+            "p": 0.06066176470588235,
+            "f": 0.08732930690164124
+        },
+        "rouge-l": {
+            "r": 0.48161764705882354,
+            "p": 0.21455938697318006,
+            "f": 0.29462365163250603
+        }
+    },
+    "story_prediction": {
+        "accuracy": 0.0,
+        "precision": 0.16666666666666666,
+        "recall": 0.017241379310344827
+    },
+    "chatbot": {
+        "average_bleu": 2.1601200712478646e-155
+    },
+    "sentiment_analysis": {
+        "task_name": "sentiment_analysis",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+    },
+    "question_answering": {
+        "exact_match": 1.0,
+        "f1_score": 1.0
+    }
+}
